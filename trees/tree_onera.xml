@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://impex-fp7.oeaw.ac.at" xsi:schemaLocation="http://impex-fp7.oeaw.ac.at/xsd/impex-1_0_1.xsd">
+<Version>2.2.2</Version>
+<SimulationModel>
+     <ResourceID>spase://IMPEX/SimulationModel/ONERA/Salammbo</ResourceID>
+     <ResourceHeader>
+     <ResourceName>ONERA_Salammbo</ResourceName>
+            <ReleaseDate>2017-10-18T00:00:00.000</ReleaseDate>
+            <Description>
+                Salammbo model of the Jovian electron radiation belts developed by ONERA
+            </Description>            
+            <Contact>
+                <PersonID>ONERA</PersonID>
+                <Role>DataProducer</Role>
+            </Contact>
+            <InformationURL>
+                <URL>http://www.onera.fr</URL> <!-- a remplacer -->
+            </InformationURL>
+        </ResourceHeader>
+        <SimulationType>Analytic</SimulationType>
+        <CodeLanguage>Fortran1990</CodeLanguage>
+    </SimulationModel>  
+<Repository> 
+<ResourceID>spase://IMPEX/Repository/ONERA</ResourceID> 
+<ResourceHeader> 
+<ResourceName>ONERA simulation</ResourceName> 
+<ReleaseDate>2017-10-18T00:00:00.000</ReleaseDate> 
+<Description/>
+<Contact> 
+<PersonID>ONERA</PersonID> 
+<Role>DataProducer</Role> 
+</Contact> 
+</ResourceHeader> 
+<AccessURL> 
+<URL>http://www.ONERA.fr</URL> 
+</AccessURL> 
+</Repository> 
+<SimulationRun>
+<ResourceID>spase://IMPEX/SimulationRun/ONERA/Salammbo/test1</ResourceID>
+<ResourceHeader>
+<ResourceName>Salammbo_test1</ResourceName>
+<ReleaseDate>2017-10-18T00:00:00.000</ReleaseDate>
+<Description/>
+<Contact>
+<PersonID>ONERA</PersonID>
+<Role>DataProducer</Role>
+</Contact>
+</ResourceHeader>
+<Model>
+    <ModelID>spase://IMPEX/SimulationModel/ONERA/Salammbo</ModelID>
+</Model>
+<TemporalDependence>No</TemporalDependence>
+<SimulatedRegion>Jupiter</SimulatedRegion>
+<LikelihoodRating>Probable</LikelihoodRating>
+    <SimulationTime>
+        <Duration>PT2072.854S</Duration>
+        <TimeStart>00:00:00</TimeStart>
+        <TimeStep>PT0.115S</TimeStep>
+    </SimulationTime>
+<SimulationDomain>
+<CoordinateSystem>
+<CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+<CoordinateSystemName>S3</CoordinateSystemName>
+</CoordinateSystem>
+<SpatialDimension>3</SpatialDimension>
+<VelocityDimension>0</VelocityDimension>
+<FieldDimension>3</FieldDimension>
+<Units>km</Units>
+<CoordinatesLabel>X Y Z</CoordinatesLabel>
+<ValidMin>-750566.  -750566.  -750566.</ValidMin>
+<ValidMax>750566.   750566.   750566.</ValidMax>
+<GridStructure>Constant</GridStructure>
+<GridCellSize>35746.    35746.    35746.</GridCellSize>
+<Symmetry>Axial</Symmetry>
+<BoundaryConditions>
+<ParticleBoundary>
+<SideWall> absorbing </SideWall>
+<Obstacle> absorbing </Obstacle>
+</ParticleBoundary>
+
+</BoundaryConditions>
+</SimulationDomain>
+
+<RegionParameter>
+<SimulatedRegion>Jupiter</SimulatedRegion>
+<Radius Units="km">71492.00</Radius>
+</RegionParameter>
+<InputField>
+<Name>InternalMagneticField</Name>
+<SimulatedRegion>Jupiter</SimulatedRegion>
+<FieldQuantity>Magnetic</FieldQuantity>
+<FieldModel>O6</FieldModel>
+</InputField>
+<InputField>
+<Name>ExternalMagneticField</Name>
+<SimulatedRegion>Jupiter</SimulatedRegion>
+<FieldQuantity>Magnetic</FieldQuantity>
+<FieldModel>Khurana1997</FieldModel>
+</InputField>
+<InputPopulation>
+<Name>radiation belt electrons</Name>
+<Description>10MeV electron</Description>
+<SimulatedRegion>Jupiter</SimulatedRegion>
+<ParticleType>Electron</ParticleType>
+<PopulationMassNumber>0</PopulationMassNumber>
+<PopulationChargeState>-1</PopulationChargeState>
+</InputPopulation>
+
+
+<InputProcess>
+<Name>Radial diffusion</Name>
+<ProcessType>Other</ProcessType>
+<Units>s-1</Units>
+<ProcessCoefficient>10E-10</ProcessCoefficient>
+<ProcessCoeffType>Rate</ProcessCoeffType>
+</InputProcess>
+
+
+</SimulationRun>
+
+
+<NumericalOutput>
+<ResourceID>spase://IMPEX/NumericalOutput/ONERA/Salammbo/test1/flu10MeV</ResourceID>
+<ResourceHeader>
+<ResourceName>10MeV Electron flux</ResourceName>
+<ReleaseDate>2017-10-18T00:00:00.000</ReleaseDate>
+<Description/>
+<Contact>
+<PersonID>ONERA</PersonID>
+<Role>DataProducer</Role>
+</Contact>
+</ResourceHeader>
+<AccessInformation>
+<RepositoryID>spase://IMPEX/Repository/ONERA</RepositoryID>
+<AccessURL>
+<URL>http://www.onera.fr</URL>
+</AccessURL>
+<Format>NetCDF</Format>
+</AccessInformation>
+<MeasurementType>EnergeticParticles</MeasurementType>
+<SpatialDescription>
+<Dimension>3</Dimension>
+<CoordinateSystem>
+<CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+<CoordinateSystemName>S3</CoordinateSystemName>
+</CoordinateSystem>
+<Units>km</Units>
+<UnitsConversion> 1000 &gt; m </UnitsConversion>
+<RegionBegin>   -750566.   -750566.   -750566. </RegionBegin>
+<RegionEnd>    750566.    750566.    750566. </RegionEnd>
+</SpatialDescription>
+<SimulatedRegion>Jupiter</SimulatedRegion>
+<InputResourceID>spase://IMPEX/SimulationRun/ONERA/Salammbo/test1</InputResourceID>
+<Parameter>
+<Name>Flux</Name>
+<ParameterKey>Flux</ParameterKey>
+<Units>cm^-2.s^-1</Units>
+<Particle>
+<PopulationID>Radiation belt electrons</PopulationID>
+<ParticleType>electron</ParticleType>
+<ParticleQuantity>NumberFlux</ParticleQuantity>
+<PopulationMassNumber>0</PopulationMassNumber>
+<PopulationChargeState>-1</PopulationChargeState>
+</Particle>
+</Parameter>
+
+<SimulationProduct>3DCubes</SimulationProduct>
+</NumericalOutput>
+
+<Granule>
+<ResourceID>spase://IMPEX/Granule/ONERA/Salammbo/test1/flux10MeV/file</ResourceID>
+<ReleaseDate>2017-10-18T00:00:00.000</ReleaseDate>
+<ParentID>spase://IMPEX/NumericalOutput/ONERA/Salammbo/test1/flu10MeV</ParentID>
+<RegionBegin>   -750566.   -750566.   -750566. </RegionBegin>
+<RegionEnd>    750566.    750566.    750566. </RegionEnd>
+<Source>
+<SourceType>Data</SourceType>
+<URL>http://userpages.irap.omp.eu/~vgenot/3DView/salammbo10MeV.nc</URL> <!-- a remplacer -->
+</Source>
+</Granule>
+
+</Spase>
