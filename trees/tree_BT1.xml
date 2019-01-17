@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns="http://www.spase-group.org/data/schema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.spase-group.org/data/schema/spase-sim-1_0_0.xsd">
-    <Version>2.2.2</Version>
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-sim-1_0_0.xsd">
+    <Version>2.2.6</Version>
     <SimulationModel>
         <ResourceID>spase://IMPEX/SimulationModel/IRAP/CPEMv2</ResourceID>
         <ResourceHeader>
             <ResourceName>CPEMv2</ResourceName>
             <ReleaseDate>2018-05-21T00:00:00.000</ReleaseDate>
             <Description>
-                Corotation Plasma Environment Model
+                Corotation Plasma Environment Model -- Simulation Type : Analytic
             </Description>
             <Contact>
                 <PersonID>Benjamin Torn</PersonID>
@@ -17,11 +17,10 @@
             </Contact>
             <InformationURL>
                 <URL>https://ieeexplore.ieee.org/document/8361988</URL>
-                <!--  a remplacer  -->
             </InformationURL>
         </ResourceHeader>
-        <SimulationType>Analytic</SimulationType>
-        <CodeLanguage>Python3</CodeLanguage>
+ <!-- Hybrid should be replaced with Analytic ( Need schema update -->
+        <SimulationType>Hybrid</SimulationType>
     </SimulationModel>
     <Repository>
         <ResourceID>spase://IMPEX/Repository/IRAP</ResourceID>
@@ -82,9 +81,7 @@
         </RegionParameter>
     </SimulationRun>
     <NumericalOutput>
-        <ResourceID>
-            spase://IMPEX/NumericalOutput/IRAP/CPEMv2/test1/plasma_density
-        </ResourceID>
+        <ResourceID>spase://IMPEX/NumericalOutput/IRAP/CPEMv2/test1/plasma_density</ResourceID>
         <ResourceHeader>
             <ResourceName>Plasma Density</ResourceName>
             <ReleaseDate>2018-12-03T00:00:00.000</ReleaseDate>
@@ -120,7 +117,7 @@
             <ParameterKey>Flux</ParameterKey>
             <Units>cm^-3</Units>
             <Particle>
-                <PopulationID>Thermal Electrons</PopulationID>
+                <Population>Thermal Electrons</Population>
                 <ParticleType>Electron</ParticleType>
                 <ParticleQuantity>NumberDensity</ParticleQuantity>
                 <PopulationMassNumber>0</PopulationMassNumber>
@@ -130,21 +127,14 @@
         <SimulationProduct>3DCubes</SimulationProduct>
     </NumericalOutput>
     <Granule>
-        <ResourceID>
-            spase://IMPEX/Granule/IRAP/CPEMv2/test1/plasma_density/file
-        </ResourceID>
+        <ResourceID>spase://IMPEX/Granule/IRAP/CPEMv2/test1/plasma_density/file</ResourceID>
         <ReleaseDate>2018-12-03T00:00:00.000</ReleaseDate>
-        <ParentID>
-            spase://IMPEX/NumericalOutput/IRAP/CPEMv2/test1/plasma_density
-        </ParentID>
+        <ParentID>spase://IMPEX/NumericalOutput/IRAP/CPEMv2/test1/plasma_density</ParentID>
         <RegionBegin> -2144760. -2144760. -2144760. </RegionBegin>
         <RegionEnd> 2144760. 2144760. 2144760. </RegionEnd>
         <Source>
             <SourceType>Data</SourceType>
-            <URL>
-                http://userpages.irap.omp.eu/~vgenot/3DView/densityfromQN.nc
-            </URL>
-            <!--  a remplacer  -->
+            <URL>https://github.com/mgangloff/CDPP-SIMU/tree/master/data/densityfromQN.nc</URL>
         </Source>
     </Granule>
 </Spase>
