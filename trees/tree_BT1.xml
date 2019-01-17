@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Spase xmlns="http://www.spase-group.org/data/schema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.spase-group.org/data/schema/spase-sim-1_0_0.xsd">
+    <Version>2.2.2</Version>
+    <SimulationModel>
+        <ResourceID>spase://IMPEX/SimulationModel/IRAP/CPEMv2</ResourceID>
+        <ResourceHeader>
+            <ResourceName>CPEMv2</ResourceName>
+            <ReleaseDate>2018-05-21T00:00:00.000</ReleaseDate>
+            <Description>
+                Corotation Plasma Environment Model
+            </Description>
+            <Contact>
+                <PersonID>Benjamin Torn</PersonID>
+                <Role>DataProducer</Role>
+            </Contact>
+            <InformationURL>
+                <URL>https://ieeexplore.ieee.org/document/8361988</URL>
+                <!--  a remplacer  -->
+            </InformationURL>
+        </ResourceHeader>
+        <SimulationType>Analytic</SimulationType>
+        <CodeLanguage>Python3</CodeLanguage>
+    </SimulationModel>
+    <Repository>
+        <ResourceID>spase://IMPEX/Repository/IRAP</ResourceID>
+        <ResourceHeader>
+            <ResourceName>CPEMv2 Plasma Density</ResourceName>
+            <ReleaseDate>2018-05-21T00:00:00.000</ReleaseDate>
+            <Description/>
+            <Contact>
+                <PersonID>Benjamin Torn</PersonID>
+                <Role>DataProducer</Role>
+            </Contact>
+        </ResourceHeader>
+        <AccessURL>
+            <URL>http://www.irap.omp.eu</URL>
+        </AccessURL>
+    </Repository>
+    <SimulationRun>
+        <ResourceID>spase://IMPEX/SimulationRun/IRAP/CPEMv2/test1</ResourceID>
+        <ResourceHeader>
+            <ResourceName>CPEM_test1</ResourceName>
+            <ReleaseDate>2018-12-03T00:00:00.000</ReleaseDate>
+            <Description/>
+            <Contact>
+                <PersonID>Benjamin Torn</PersonID>
+                <Role>DataProducer</Role>
+            </Contact>
+        </ResourceHeader>
+        <Model>
+            <ModelID>spase://IMPEX/SimulationModel/IRAP/CPEMv2</ModelID>
+        </Model>
+        <TemporalDependence>No</TemporalDependence>
+        <SimulatedRegion>Jupiter</SimulatedRegion>
+        <LikelihoodRating>Probable</LikelihoodRating>
+        <SimulationTime>
+            <Duration>PT2072.854S</Duration>
+            <TimeStart>00:00:00</TimeStart>
+            <TimeStep>PT0.115S</TimeStep>
+        </SimulationTime>
+        <SimulationDomain>
+            <CoordinateSystem>
+                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                <CoordinateSystemName>JSO</CoordinateSystemName>
+            </CoordinateSystem>
+            <SpatialDimension>3</SpatialDimension>
+            <VelocityDimension>0</VelocityDimension>
+            <FieldDimension>3</FieldDimension>
+            <Units>km</Units>
+            <CoordinatesLabel>X Y Z</CoordinatesLabel>
+            <ValidMin>-2144760. -2144760. -2144760.</ValidMin>
+            <ValidMax>2144760. 2144760. 2144760.</ValidMax>
+            <GridStructure>Constant</GridStructure>
+            <GridCellSize>35746. 35746. 35746.</GridCellSize>
+            <Symmetry>Axial</Symmetry>
+        </SimulationDomain>
+        <RegionParameter>
+            <SimulatedRegion>Jupiter</SimulatedRegion>
+            <Radius Units="km">71492.00</Radius>
+        </RegionParameter>
+    </SimulationRun>
+    <NumericalOutput>
+        <ResourceID>
+            spase://IMPEX/NumericalOutput/IRAP/CPEMv2/test1/plasma_density
+        </ResourceID>
+        <ResourceHeader>
+            <ResourceName>Plasma Density</ResourceName>
+            <ReleaseDate>2018-12-03T00:00:00.000</ReleaseDate>
+            <Description/>
+            <Contact>
+                <PersonID>Benjamin Torn</PersonID>
+                <Role>DataProducer</Role>
+            </Contact>
+        </ResourceHeader>
+        <AccessInformation>
+            <RepositoryID>spase://IMPEX/Repository/IRAP</RepositoryID>
+            <AccessURL>
+                <URL>http://www.irap.omp.eu</URL>
+            </AccessURL>
+            <Format>NetCDF</Format>
+        </AccessInformation>
+        <MeasurementType>ThermalPlasma</MeasurementType>
+        <SpatialDescription>
+            <Dimension>3</Dimension>
+            <CoordinateSystem>
+                <CoordinateRepresentation>Cartesian</CoordinateRepresentation>
+                <CoordinateSystemName>JSO</CoordinateSystemName>
+            </CoordinateSystem>
+            <Units>km</Units>
+            <UnitsConversion> 1000 > m </UnitsConversion>
+            <RegionBegin> -2144760. -2144760. -2144760. </RegionBegin>
+            <RegionEnd> 2144760. 2144760. 2144760. </RegionEnd>
+        </SpatialDescription>
+        <SimulatedRegion>Jupiter</SimulatedRegion>
+        <InputResourceID>spase://IMPEX/SimulationRun/IRAP/CPEMv2/test1</InputResourceID>
+        <Parameter>
+            <Name>Plasma Density</Name>
+            <ParameterKey>Flux</ParameterKey>
+            <Units>cm^-3</Units>
+            <Particle>
+                <PopulationID>Thermal Electrons</PopulationID>
+                <ParticleType>Electron</ParticleType>
+                <ParticleQuantity>NumberDensity</ParticleQuantity>
+                <PopulationMassNumber>0</PopulationMassNumber>
+                <PopulationChargeState>-1</PopulationChargeState>
+            </Particle>
+        </Parameter>
+        <SimulationProduct>3DCubes</SimulationProduct>
+    </NumericalOutput>
+    <Granule>
+        <ResourceID>
+            spase://IMPEX/Granule/IRAP/CPEMv2/test1/plasma_density/file
+        </ResourceID>
+        <ReleaseDate>2018-12-03T00:00:00.000</ReleaseDate>
+        <ParentID>
+            spase://IMPEX/NumericalOutput/IRAP/CPEMv2/test1/plasma_density
+        </ParentID>
+        <RegionBegin> -2144760. -2144760. -2144760. </RegionBegin>
+        <RegionEnd> 2144760. 2144760. 2144760. </RegionEnd>
+        <Source>
+            <SourceType>Data</SourceType>
+            <URL>
+                http://userpages.irap.omp.eu/~vgenot/3DView/densityfromQN.nc
+            </URL>
+            <!--  a remplacer  -->
+        </Source>
+    </Granule>
+</Spase>
