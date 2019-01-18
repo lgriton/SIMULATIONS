@@ -134,7 +134,7 @@
         <RegionEnd> 2144760. 2144760. 2144760. </RegionEnd>
         <Source>
             <SourceType>Data</SourceType>
-            <URL>https://github.com/mgangloff/CDPP-SIMU/tree/master/data/densityfromQN.nc</URL>
+            <URL>https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/densityfromQN.nc?raw=true</URL>
         </Source>
     </Granule>
 </Spase>
