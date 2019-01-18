@@ -175,7 +175,7 @@
 <RegionEnd>    750566.    750566.    750566. </RegionEnd>
 <Source>
 <SourceType>Data</SourceType>
-<URL>http://userpages.irap.omp.eu/~vgenot/3DView/salammbo10MeV.nc</URL> <!-- a remplacer -->
+<URL>https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/salammbo10MeV.nc</URL> <!-- a remplacer -->
 </Source>
 </Granule>
 
