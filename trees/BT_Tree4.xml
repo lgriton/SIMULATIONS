@@ -141,8 +141,7 @@
         <RegionEnd> 2144760. 2144760. 0. </RegionEnd>
         <Source>
             <SourceType>Data</SourceType>
-            <URL>http://userpages.irap.omp.eu/~vgenot/3DView/charge_density_test_CPEMv2_4.nc</URL>
-            <!--  a remplacer  -->
+            <URL>https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/charge_density_test_CPEMv2_4.nc?raw=true</URL>
         </Source>
     </Granule>
 </Spase>
