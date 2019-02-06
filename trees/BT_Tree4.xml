@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Spase xmlns="http://www.spase-group.org/data/schema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.spase-group.org/data/schema/spase-sim-1_0_0.xsd">
-    <Version>2.2.2</Version>
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-sim-1_0_0.xsd">
+    <Version>2.2.6</Version>    
     <SimulationModel>
         <ResourceID>spase://IMPEX/SimulationModel/IRAP/CPEMv2</ResourceID>
         <ResourceHeader>
@@ -21,7 +21,6 @@
             </InformationURL>
         </ResourceHeader>
         <SimulationType>Analytic</SimulationType>
-        <CodeLanguage>Python3</CodeLanguage>
     </SimulationModel>
     <Repository>
         <ResourceID>spase://IMPEX/Repository/IRAP</ResourceID>
@@ -120,7 +119,7 @@
             <ParameterKey>charge_density</ParameterKey>
             <Units>cm^-3</Units>
             <Particle>
-                <PopulationID>Thermal Electrons</PopulationID>
+                <Population>Thermal Electrons</Population>
                 <ParticleType>Electron</ParticleType>
                 <ParticleQuantity>NumberDensity</ParticleQuantity>
                 <PopulationMassNumber>0</PopulationMassNumber>
