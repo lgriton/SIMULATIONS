@@ -73,7 +73,20 @@ https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/*name_of_your_data_fil
 
 Example:
 
-https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/charge_density_test_CPEMv2_7.nc?raw=true
+https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/charge_density_test_CPEMv2_7.nc?raw=
+
+Be sure you enter the URL in the following way:
+\<URL\>...\<URL\>
+
+as 
+
+\<URL\>
+
+...
+
+\<URL\> 
+
+  will generate an error
 
 
 ## Where do you store your impex trees ?
