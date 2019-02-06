@@ -27,6 +27,10 @@ This resource gives information related to an execution of the code with specifi
 
 This resource gives information related to the outputs of a specific run , i.e the description of each physical parameter
 
+Describe in this resource each physical quantity in *parameter*.
+
+__parameterKey__ in the tree and the name of the variable in the NetCDF file should exactly match.
+
 ### Granule
 
 This resource gives information related to each file containing a set of parameters described in NumericalOutput. For time series, a NumericalOutput points to several granules with the same caracteristics,except time.
