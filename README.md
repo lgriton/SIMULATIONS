@@ -63,5 +63,17 @@ spase://IMPEx/Granule/IRAP/CPEMv2/test1/plasma_density/file
 * In NumericalOutput, InputResourceID must contain the ResourceID of SimulationRun
 * in Granule, parentID must contain the ResourceID of NumericalOutput
 
+## URL of the associated data file
 
+
+
+## Where do you store your impex trees ?
+
+Store your impex trees in the *trees* directory
+
+## What is the URL of your impex tree
+
+If you want to give access to your tree (e.g. to 3DView) use the following URL:
+
+https://raw.githubusercontent.com/CDPP-IRAP/SIMULATIONS/master/trees/*name_of_your_tree*
 
