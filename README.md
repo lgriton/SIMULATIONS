@@ -65,6 +65,15 @@ spase://IMPEx/Granule/IRAP/CPEMv2/test1/plasma_density/file
 
 ## URL of the associated data file
 
+All the data files associated with an impex tree must be uploaded in the *data* directory, although you can alternatively use an external URL
+
+If you want to use Github to store your data, write the URL of the datafile ( NetCDF ) in Granule/Source/URL
+
+https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/*name_of_your_data_file*?raw=true
+
+Example:
+
+https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/charge_density_test_CPEMv2_7.nc?raw=true
 
 
 ## Where do you store your impex trees ?
