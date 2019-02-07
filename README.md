@@ -120,7 +120,7 @@ __Parammeters__:
 dans des tableaux à 3 dimensions dont le nom correspond au ParameterKey du tree.
 Three dimentional arrays , with a name corresponding to ParameterKey declared in the impex Tree
 
-## Display a Cube in3DView
+## Display a Cube in 3DView
 
 If you have prepared an impex tree and the corresponding cube in netcdf format (following thhe rules above) , it is possible to display this cube in 3DView
 
