@@ -136,4 +136,8 @@ If you have prepared an impex tree and the corresponding cube in netcdf format (
 
 #### After a few seconds, you will see a window containing a user interface to access remote data compatible with impex.
 
+<img src="./img/3DView-1.png" alt="3DView-1">
+
 #### Select the parameter you want to display in the 3D scene
+
+<img src="./img/3DView-2.png" alt="3DView-2">
