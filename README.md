@@ -103,3 +103,20 @@ If you want to give access to your tree (e.g. to 3DView) use the following URL:
 
 https://raw.githubusercontent.com/CDPP-IRAP/SIMULATIONS/master/trees/*name_of_your_tree*
 
+## How to write a NetCDF file containing a cube compatible with 3DView
+
+Variables must be declared as *float*:
+
+__Positions__: 
+
+ - gstep[3] (grid step) and vector s_center (like old cubes from LATMOS, obsolete)
+ 
+ or
+ 
+ - array of float x, y et z (planetary radius as units).
+
+__Parammeters__:
+
+dans des tableaux à 3 dimensions dont le nom correspond au ParameterKey du tree.
+Three dimentional arrays , with a name corresponding to ParameterKey declared in the impex Tree
+
