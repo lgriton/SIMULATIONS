@@ -120,3 +120,20 @@ __Parammeters__:
 dans des tableaux à 3 dimensions dont le nom correspond au ParameterKey du tree.
 Three dimentional arrays , with a name corresponding to ParameterKey declared in the impex Tree
 
+## Display a Cube in3DView
+
+If you have prepared an impex tree and the corresponding cube in netcdf format (following thhe rules above) , it is possible to display this cube in 3DView
+
+#### Open a scene in 3Dview with Jupiter as central body
+
+#### Select *Interoperability* then *Impex configuration* and *User defined trees*
+
+#### Enter the name and URL of the impex tree
+
+#### Click on the *Add to list* button, then *Apply* and *Close*
+
+#### In the general menu, select *Science*, then *Remote data (IMPEx)*
+
+#### After a few seconds, you will see a window containing a user interface to access remote data compatible with impex.
+
+#### Select the parameter you want to display in the 3D scene
