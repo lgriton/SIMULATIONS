@@ -9,6 +9,16 @@ You can use [this file](https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/tre
 
 ## Contents of an IMPEx Tree
 
+### Associate the spase-impex XML schema
+
+The root element of a tree is <Spase> . To associate the spase simulation extension schema , insert the following declaration at the beginning of the file:
+  
+>\<Spase xmlns="http://www.spase-group.org/data/schema"
+> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+> xsi:schemaLocation="http://www.spase-group.org/data/schema http://www.spase-group.org/data/schema/spase-sim-1_0_0.xsd"\>
+>
+>\<Version\>2.2.6\</Version\>    
+
 A tree must contain at least four resources: SimulationModel, SimulationRun, NumericalOutput and Granule. 
 
 Respository is optional.
