@@ -69,10 +69,10 @@
             <FieldDimension>3</FieldDimension>
             <Units>km</Units>
             <CoordinatesLabel>X Y Z</CoordinatesLabel>
-            <ValidMin>-2144760. -2144760. 0.</ValidMin>
-            <ValidMax>2144760. 2144760. 0.</ValidMax>
+            <ValidMin>-2144760. -2144760. -2144760.</ValidMin>
+            <ValidMax>2144760. 2144760. 0.2144760.</ValidMax>
             <GridStructure>Constant</GridStructure>
-            <GridCellSize>35746. 35746. 0.</GridCellSize>
+            <GridCellSize>14298. 14298. 14298.</GridCellSize>
             <Symmetry>Axial</Symmetry>
         </SimulationDomain>
         <RegionParameter>
@@ -109,8 +109,8 @@
             </CoordinateSystem>
             <Units>km</Units>
             <UnitsConversion> 1000 > m </UnitsConversion>
-            <RegionBegin> -2144760. -2144760. 0. </RegionBegin>
-            <RegionEnd> 2144760. 2144760. 0. </RegionEnd>
+            <RegionBegin> -2144760. -2144760. -2144760. </RegionBegin>
+            <RegionEnd> 2144760. 2144760. 2144760. </RegionEnd>
         </SpatialDescription>
         <SimulatedRegion>Jupiter</SimulatedRegion>
         <InputResourceID>spase://IMPEX/SimulationRun/IRAP/CPEMv2/test1</InputResourceID>
@@ -136,8 +136,8 @@
         <ParentID>
             spase://IMPEX/NumericalOutput/IRAP/CPEMv2/test1/plasma_density
         </ParentID>
-        <RegionBegin> -2144760. -2144760. 0. </RegionBegin>
-        <RegionEnd> 2144760. 2144760. 0. </RegionEnd>
+        <RegionBegin> -2144760. -2144760. -2144760. </RegionBegin>
+        <RegionEnd> 2144760. 2144760. 2144760. </RegionEnd>
         <Source>
             <SourceType>Data</SourceType>
             <URL>https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/charge_density_test_CPEMv2_7.nc?raw=true</URL>
