@@ -140,7 +140,7 @@
         <RegionEnd> 2144760. 2144760. 2144760. </RegionEnd>
         <Source>
             <SourceType>Data</SourceType>
-            <URL>https://github.com/CDPP-IRAP/SIMULATIONS/blob/master/data/charge_density_test_CPEMv2_7.nc?raw=true</URL>
+            <URL>https://nuage.irap.omp.eu/index.php/s/VCmp4V0t4h1JxxH/download</URL>
         </Source>
     </Granule>
 </Spase>
