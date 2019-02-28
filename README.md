@@ -125,9 +125,8 @@ __Positions__:
  
  - array of float x, y et z (planetary radius as units).
 
-__Parammeters__:
+__Parameters__:
 
-dans des tableaux à 3 dimensions dont le nom correspond au ParameterKey du tree.
 Three dimentional arrays , with a name corresponding to ParameterKey declared in the impex Tree
 
 ## Display a Cube in 3DView
