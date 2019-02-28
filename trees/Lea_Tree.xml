@@ -111,7 +111,7 @@
         <InputResourceID>spase://IMPEX/SimulationRun/IRAP/BepiC/test1</InputResourceID>
         <Parameter>
             <Name>Plasma Density</Name>
-            <ParameterKey>n</ParameterKey>
+            <ParameterKey>n_norm_cm3</ParameterKey>
             <Units>cm^-3</Units>
             <Particle>
                 <Population>Thermal Electrons</Population>
